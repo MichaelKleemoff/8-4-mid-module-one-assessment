@@ -75,7 +75,17 @@ function getAllKinds(animals) {
   ];
  * filterByCountMinimum([], 3); //> [] // returns empty array if input array is empty
  */
-function filterByCountMinimum(animals, minimum) {}
+function filterByCountMinimum(animals, minimum) {
+  let minObjArray = [];
+
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].count >= minimum) {
+      minObjArray.push(animals[i]);
+    }
+  }
+
+  return minObjArray;
+}
 
 /**
  * FUNCTION DESCRIPTION
