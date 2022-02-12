@@ -50,11 +50,11 @@ function getTotalCount(animals) {
  */
 function getAllKinds(animals) {
   let kindAnimal = [];
-
+  
   for (let i = 0; i < animals.length; i++) {
     kindAnimal.push(animals[i].kind);
   }
-
+  
   return kindAnimal;
 }
 
